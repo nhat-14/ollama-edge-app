@@ -1,0 +1,18 @@
+apiVersion: margo.org/v1-alpha1
+kind: ApplicationDescription
+id: ollama-edge-app
+metadata:
+  name: ollama edge app
+  description: A basic edge app for running ollama on edge
+  version: 1.0.0
+  catalog:
+    organization:
+      - name: nhat-14
+        site: https://github.com/nhat-14
+deploymentProfiles:
+  - type: compose
+    id: ollama-edge-app-compose
+    components:
+      - name: ollama-edge-app-docker
+        properties:
+          packageLocation: https://raw.githubusercontent.com/nhat-14/gh-actions-test/refs/heads/main/compose.yaml
