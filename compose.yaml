@@ -1,7 +1,7 @@
 services:
   ollama:
     image: docker.io/ollama/ollama:latest
-    container_name: ai-box-ollama
+    container_name: ollama
     volumes:
       - ollama-models:/root/.ollama
     ports:
