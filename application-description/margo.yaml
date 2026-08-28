@@ -15,4 +15,4 @@ deploymentProfiles:
     components:
       - name: ollama-edge-app-docker
         properties:
-          packageLocation: https://raw.githubusercontent.com/nhat-14/gh-actions-test/refs/heads/main/compose.yaml
+          packageLocation: https://raw.githubusercontent.com/nhat-14/ollama-edge-app/refs/heads/master/resources/compose.yaml
