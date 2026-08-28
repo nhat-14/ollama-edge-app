@@ -22,17 +22,7 @@ response = client.chat(
     model=model,
     messages=[{"role": "user", "content": "Hello from the edge device"}],
 )
+now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print(f"Now: {now}")
 print(response["message"]["content"])
 
-
-print("Starting the program. If stopping, please press Ctrl+C")
-
-
-try:
-    while True:
-        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"Now: {now}")
-        time.sleep(10)
-
-except KeyboardInterrupt:
-    print("\nStopped")
